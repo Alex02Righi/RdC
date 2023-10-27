@@ -15,7 +15,7 @@ La comunicazione avviene tramite 5 componenti:
 Per valutare un canale di comunicazione ho bisogno di considerare alcune metriche:
 - **Ampiezza di banda digitale (bit/sec)**: Quantità di bit (dati) che possono essere trasmessi nell'unità di tempo (sec)
 - **Ritardo/Latenza (sec)**: Tempo di trasferimento di un bit da un terminale all'altro
-- **Jitter**: Variazione del ritardo
+- **Jitter**: Variazione del ritardo, misura quanto il tempo di trasmissione di dati oscilla nel corso della comunicazione.
 - **Affidabilità**: Intolleranza agli errori di trasmissione, o meglio la percentuale di bit persi
 - **Sicurezza**: Capacità di opporsi ad accessi non autorizzato, danno o violazioni della rete
 
