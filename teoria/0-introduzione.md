@@ -22,7 +22,7 @@ Per valutare un canale di comunicazione ho bisogno di considerare alcune metrich
 | Applicazioni  | Affidabilità | Ritardo | Jitter | Larghezza di banda |
 | ------------- | ------------ | ------- | ------ | ------------------ |
 | E-mail        | Alto         | Basso   | Basso  | Basso              |
-| File transfer | Alto         | Basso   | Baso   | Medio              |
+| File transfer | Alto         | Basso   | Basso   | Medio              |
 | Web access    | Alto         | Medio   | Basso  | Medio              |
 | Remote login  | Alto         | Medio   | Medio  | Basso              |
 
