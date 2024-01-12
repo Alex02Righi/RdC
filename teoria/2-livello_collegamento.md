@@ -1,9 +1,6 @@
-
-# Index
-
 ```table-of-contents
 ```
-
+---
 
 # Livello Data - Link
 Il livello Data-Link è responsabile di fornire un mezzo affidabile per il trasferimento di dati tra nodi adiacenti in una rete di computer. Questi nodi possono essere collegati attraverso canali punto-punto o su una rete multi-accesso.
@@ -31,7 +28,6 @@ Vediamo i diversi tipi di servizi che possono essere forniti al livello di rete 
 	  - Chiusura della connessione
 	 Tuttavia, questo servizio ha un overhead elevato e di solito non è comunemente utilizzato a livello Data-Link. È più comunemente implementato a livelli superiori, come nel protocollo TCP, che opera a livello di trasporto.
 
-[[#Index|Torna all'indice]]
 
 ---
 
@@ -59,8 +55,6 @@ Flusso iniziale: 0 1 1 0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0 1 0
 Aggiunta dei stuffed bits: 0 1 1 1 1 1 <span style="color: #946EFA;">0</span> 1 1 1 1 1 <span style="color: #946EFA;">0</span> 1 1 1 1 1 <span style="color: #946EFA;">0</span> 1 0 0 1 0
 Flusso elaborato dal destinatario: 0 1 1 0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0 1 0
 
-[[#Index|Torna all'indice]]
-
 ---
 
 ## Rilevazione e Correzione degli errori
@@ -85,8 +79,8 @@ Il bit di parità si usa in molti dispositivi hardware come ad esempio nei bus S
 
 ### Cyclic Redundancy Check (CRC)
 Come funziona?
-- **Rappresentazione del frame come polinomio**: innanzitutto devo rappresentare il frame di lunghezza *d* bit come una lista di coefficienti di un polinomio *D* con *d* termini (di grado d−1). Ad esempio, la sequenza 110001110001 rappresenta x^5 + x^4 + x^0.
-- **Scelta del polinomio generatore**: successivamente il trasmettitore e il ricevitore concordano su un polinomio comune *G* di grado r (quindi r+1 bit), detto **generatore**, questo polinomio deve essere un numero primo.
+- **Rappresentazione del frame come polinomio**: innanzitutto devo rappresentare il frame di lunghezza *d* bit come una lista di coefficienti di un polinomio *D* con *d* termini (di grado d−1). Ad esempio, la sequenza 110001110001 rappresenta $x^{11}+x^{10}+x^6+x^5+x^4+x^0$.
+- **Scelta del polinomio generatore**: successivamente il trasmettitore e il ricevitore concordano su un polinomio comune *G* di grado r (quindi r+1 bit), detto **generatore**, questo polinomio deve essere di grado un numero primo.
 - **Aggiunta del CRC**: il trasmettitore aggiunge *r* bit al termine della sequenza del frame, formando un nuovo frame *M* di grado r + d−1; questi *r* bit costituiscono il CRC e sono inizialmente impostati a 0.
 - **Divisione polinomiale**: il trasmettitore esegue una divisione polinomiale modulo *G* tra il polinomio rappresentato dal frame con CRC aggiunto (*M*) e il generatore *G*. Il risultato è il quoziente *Q* e il resto *R*.
 - **Aggiornamento del CRC** : il trasmettitore sostituisce i *r* bit di CRC con il resto *R* della divisione polinomiale modulo *G*.
@@ -118,8 +112,6 @@ Il risultato, senza errori di trasmissione è una sequenza di 1, altrimenti c’
 
 ![[checksum.svg]]
 
-[[#Index|Torna all'indice]]
-
 ---
 
 ## Protocolli per il controllo del flusso
@@ -130,7 +122,6 @@ Possono essere implementati al livello Data-Link o superiori.
 Vengono applicati a canali che non hanno la necessità di essere sempre connessi e che sono senza rumore
 - <span style="color: #946EFA;">Protocollo semplice:</span>  non ho bisogno di attendere un feedback dal destinatario.
 - <span style="color: #946EFA;">Protocollo Stop-and-wait:</span> in questo caso ho bisogno di attendere un feedback dal destinatario prima di inviare il prossimo frame.
-- 
 ### Protocolli in modalità connessa
 - <span style="color: #946EFA;">Protocollo Stop-and-wait ARQ:</span> il mittente attiva un timer per ogni frame inviato, se il mittente non riceve un ACK (un feedback di conferma) in un certo tempo il frame viene rispedito.
 - <span style="color: #946EFA;">Protocolli a finestra scorrevole:</span> (Sliding Window): migliorano l'efficienza del canale consentendo al trasmettitore di poter inviare fino SWS (Sender Window Size = numero di frame inviati consecutivamente prima di attendere l'ACK) frame senza attendere il riscontro ACK.
@@ -174,8 +165,6 @@ Nascendo dal mondo della telefonia, abbiamo quindi bisogno di adattare i princip
 - **Pacchetti (celle) di lunghezza fissa di 53 Byte** di cui 5 di intestazione e 48 di payload.
 
 >ATM non ha avuto successo al di fuori delle reti telefoniche, se non per la realizzazione di reti WAN, viceversa la telefonia sta diventando sempre più una applicazione di Internet.
-
-[[#Index|Torna all'indice]]
 
 ---
 
@@ -237,8 +226,6 @@ dove:
 e^(-G) = è la funzione esponenziale di *G* elevato a meno uno.
 *k!* = rappresenta il fattoriale di *k*
 
-[[#Index|Torna all'indice]]
-
 ---
 
 <span style="color: #946EFA;">Esempio:</span>
@@ -289,8 +276,6 @@ I due domini possono non coincidere per effetto di apparati di rete (Bridge) che
 ## LAN Wireless Protocolli
 Nelle reti Wireless il dominio di collisione non è nettamente definito come nelle reti wired, in quelle wireless, il concetto di dominio di collisione è meno rilevante. In una rete wireless, i dati vengono trasmessi attraverso onde radio e non ci sono cavi fisici, di conseguenza, i dispositivi non competono fisicamente per lo stesso "spazio di trasmissione" come farebbero in una rete cablata.
 Invece, le collisioni possono ancora verificarsi, ma sono gestite tramite tecniche di accesso al mezzo come il CSMA/CA (Carrier Sense Multiple Access with Collision Avoidance).
-
-[[#Index|Torna all'indice]]
 
 ---
 

@@ -2,14 +2,13 @@
 Corso _"Reti di Calcolatori"_ presso l'Università degli Studi di Parma (9 CFU).
 
 ```
-Guida directrory:
+Guida directory:
 .
 ├── esami
 │   ├── parte1
 │   └── parte2
 ├── esercizi
 ├── lab
-│   └── shared
 ├── slides
 │   ├── lab
 │   └── teoria
@@ -17,7 +16,20 @@ Guida directrory:
 
 ```
 
->Supporto per gli appunti di teoria: https://www.paypal.com/paypalme/ariannacipolla
+## Contributi
+<a href="https://paypal.me/manueldiagostino?country.x=IT&locale.x=it_IT" target="_blank">
+    <img alt="Static Badge" src="https://img.shields.io/badge/%40manueldiagostino-3558C1?style=flat&logo=paypal&link=https%3A%2F%2Fpaypal.me%2Fmanueldiagostino%3Fcountry.x%3DIT%26locale.x%3Dit_IT">
+</a>
+<a href="https://paypal.me/SimoColli?country.x=IT&locale.x=it_IT" target="_blank">
+    <img alt="Static Badge" src="https://img.shields.io/badge/%40simonecolli-3558C1?style=flat&logo=paypal&link=https://paypal.me/SimoColli?country.x=IT&locale.x=it_IT">
+</a>
+<a href="https://paypal.me/ariannacipolla?country.x=IT&locale.x=it_IT">
+    <img alt="Static Badge" src="https://img.shields.io/badge/%40ariannacipolla-3558C1?style=flat&logo=paypal&link=https%3A%2F%2Fpaypal.me%ariannacipolla%3Fcountry.x%3DIT%26locale.x%3Dit_IT">
+</a>
+<a href="https://paypal.me/merendasaveriomattia?country.x=IT&locale.x=it_IT">
+    <img alt="Static Badge" src="https://img.shields.io/badge/%40merendamattia-3558C1?style=flat&logo=paypal&link=https%3A%2F%2Fpaypal.me%merendasaveriomattia%3Fcountry.x%3DIT%26locale.x%3Dit_IT">
+</a>
+
 # Appunti di Reti di Calcolatori
 Benvenuti nella repository degli appunti presi a lezione del corso "Reti di Calcolatori". In questa cartella troverete una raccolta di appunti e materiali utili per lo studio di questa disciplina.
 
@@ -36,3 +48,10 @@ Vi ricordo che gli appunti presenti in questa cartella sono forniti a titolo inf
 Buono studio!
 
 > Altri appunti: _[merendamattia.com/uni](https://www.merendamattia.com/uni.html)_
+
+---
+
+## Contributors
+<a href="https://github.com/merendamattia/RdC/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=merendamattia/RdC" />
+</a>
